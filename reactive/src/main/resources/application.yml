@@ -1,0 +1,20 @@
+server:
+  port: 8181
+
+spring:
+
+  application:
+    name: user-management
+  data:
+    mongodb:
+
+      uri: mongodb+srv://momar97:aspire97@cluster0.gimg3.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+      database: myFirstDatabase
+
+#  h2:
+#    console:
+#      enabled: true
+
+db:
+  source:
+    impl: mongo

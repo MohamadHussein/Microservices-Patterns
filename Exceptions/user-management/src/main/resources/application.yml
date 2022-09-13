@@ -1,0 +1,13 @@
+server:
+  port: 5555
+
+spring:
+  application:
+    name: user-management
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "*"

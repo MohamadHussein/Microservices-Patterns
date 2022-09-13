@@ -1,0 +1,16 @@
+server:
+  port: 4444
+
+spring:
+  application:
+    name: greeting-service
+
+eureka:
+  instance:
+    hostname: localhost
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include:
+#          - "*"

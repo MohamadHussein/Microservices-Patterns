@@ -1,0 +1,40 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: api-gw
+  cloud:
+    discovery:
+#      enabled: true
+    gateway:
+      discovery:
+        locator:
+#          enabled: true
+#          lower-case-service-id: true
+
+#      routes:
+#        - id: userManagement
+#          uri: lb://user-management
+#          predicates:
+#            - Path=/user-management/**
+#          filters:
+#            - RewritePath=/user-management(?<segment>/?.*), $\{segment}
+#        - id: greetingService
+#          uri: lb://greeting-service
+#          predicates:
+#            - Path=/greeting-service/**
+#          filters:
+#            - RewritePath=/greeting-service(?<segment>/?.*), $\{segment}
+
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    reactor.netty.http.client: DEBUG
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "*"

@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: reporting
+
+server:
+  port: 8282

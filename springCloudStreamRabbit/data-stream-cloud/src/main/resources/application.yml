@@ -1,0 +1,13 @@
+server:
+  port: 7070
+
+spring:
+  application:
+    name: data-stream-cloud
+  cloud:
+    stream:
+      bindings:
+        SENSOR_READING_SUBMITTED:
+          destination: reading-submitted
+
+

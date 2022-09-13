@@ -1,0 +1,17 @@
+server:
+  port: 8181
+
+spring:
+  application:
+    name: user-management
+  datasource:
+    url: jdbc:h2:mem:userManagement
+    username: sa
+    password: sa
+  jpa:
+    generate-ddl: true
+    show-sql: true
+
+  h2:
+    console:
+      enabled: true

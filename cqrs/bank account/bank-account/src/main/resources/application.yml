@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: bank-accounts
+
+server:
+  port: 8181

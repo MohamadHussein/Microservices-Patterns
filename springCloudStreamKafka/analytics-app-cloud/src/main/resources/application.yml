@@ -1,0 +1,13 @@
+server:
+  port: 8181
+
+spring:
+  application:
+    name: analytics-stream-cloud
+  cloud:
+    stream:
+      bindings:
+        SENSOR-READING-RECEIVED:
+          destination: reading-submitted
+
+

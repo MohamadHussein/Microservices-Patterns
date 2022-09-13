@@ -1,0 +1,14 @@
+server:
+  port: 4444
+
+spring:
+  application:
+    name: greeting-service
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "*"
